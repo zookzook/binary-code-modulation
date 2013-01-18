@@ -24,3 +24,13 @@ There are a few optimizations:
 
 In the main loop there is a little animation for five RGB-LEDs to demonstrate the BCM in action. 
 
+The code
+========
+
+The code for BCM lives in `RGBLED.ino`. The other header and code files are used to separate 
+the data structure and animation code from the BCM. The `rgb.cpp` contains a hsv to rgb conversion and
+the rgb datastructure. The `animation.cpp` file is for the animation of the leds which are in `globals.h`
+defined. 
+
+This is not a library. You can grab that code and modify for your own needs. 
+
