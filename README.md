@@ -20,7 +20,7 @@ There are a few optimizations:
 
 * Instead of digitalWrite the programm uses direct port manipulation. This is much faster.
 * The setHSV implementation avoids float point arithmetic. So the parameters should be in [0..255] instead of [0..1].
-* Using SPI instead of bit banging. This feature will follow.
+* Using SPI instead of bit banging. 
 
 In the main loop there is a little animation for five RGB-LEDs to demonstrate the BCM in action. 
 
@@ -31,6 +31,10 @@ The code for BCM lives in `RGBLED.ino`. The other header and code files are used
 the data structure and animation code from the BCM. The `rgb.cpp` contains a hsv to rgb conversion and
 the rgb datastructure. The `animation.cpp` file is for the animation of the leds which are in `globals.h`
 defined. 
+
+The SPI version is in `RGBLED_spi.ino`. You can grab the preferred version and play with it. The
+helper files are nearly the same and only duplicated in order to have two Ardiuno IDE projects which
+can be compiled and uploaded separately.
 
 This is not a library. You can grab that code and modify for your own needs. 
 
