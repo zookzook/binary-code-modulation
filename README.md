@@ -19,7 +19,7 @@ The implementation is an example to use the BCM on the arduino with 16 Mhz and t
 There are a few optimizations:
 
 * Instead of digitalWrite the programm uses direct port manipulation. This is much faster.
-* The setHSV implementation avoids float point arithmetic. So the parameters should be in [0..255] instead of [0..1].
+* The hsv2rgb implementation avoids float point arithmetic. So the parameters should be in [0..255] instead of [0..1].
 * Using SPI instead of bit banging. 
 
 In the main loop there is a little animation for five RGB-LEDs to demonstrate the BCM in action. 
