@@ -11,7 +11,7 @@ LED on or off. By using 75Hz to avoid flickering this must be done 19.200 times 
 can see within the time unit the microcontroller checks for each pin if it must be switch on or off. For
 most cases the result is like the previous result, so the work does not change the output. It will
 be much better if we know when it is time the toggle the output. And here the BCM comes. Instead using
-a cyclical on/off cycle (40% on, 60%off) the bit position of vlaue tells the time and the on/off state of the cycle.
+a cyclical on/off cycle (40% on, 60%off) the bit position of the value tells the time and the on/off state of the cycle.
 
 Check http://www.batsocks.co.uk/readme/art_bcm_1.htm for more information.
 
@@ -38,3 +38,7 @@ can be compiled and uploaded separately.
 
 This is not a library. You can grab that code and modify for your own needs. 
 
+Arduni x and x != Uno
+=====================
+
+You need to adjust the port bits in the interrupt function.
